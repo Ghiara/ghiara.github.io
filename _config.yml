@@ -21,7 +21,7 @@ repository               : "Ghiara/yuanmeng.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "images/profile.png"
   name             : "Yuan Meng"
   pronouns         : "he/him" # example: "she/her"  
   bio              : "PhD candidate in robotic learning"
