@@ -11,54 +11,33 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. in Robotic Reinforcement Learning, Technical University of Munich, 2028 (expected)
+* M.Sc. in Mechatronics and Robotics, Technical University of Munich, 2023
+* B.Sc. in Mechanical Engineering, RWTH Aachen University, 2020
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Spring 2022 - Fall 2022: Product Management Intern
+  * NIO GmbH
+  * Duties includes: Manage NIO Power Swap Station and Simulation Development
+  * Supervisor: Dr.-Ing. Yong Wang
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Fall 2018 - Summer 2019: Teaching Assistant
+  * RWTH Aachen University
+  * Duties included: Tutorship in Statics/Dynamics/Elasticity
+  * Supervisor: Prof. Dr.-Ing. Bernd Markert
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Python
+  * Omniverse IsaacLab
+  * PyTorch
+  * Mujoco-py
+* C++
+* MatLab
+  * Simulink
+* LaTex
+  * Tikz
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
   
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
