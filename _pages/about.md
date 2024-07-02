@@ -1,13 +1,19 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+Hello! I am Yuan Meng, a researcher currently pursuing my PhD at the Technical University of Munich (TUM). My research focuses on embodied reinforcement learning, where I explore innovative ways to integrate artificial intelligence with physical systems.
+
+I began my academic journey at RWTH Aachen University, where I earned my Bachelor’s degree in Mechanical Engineering in September 2020. My fascination with the intersection of mechanics, electronics, and control systems led me to further my studies at TUM. From October 2020 to November 2023, I pursued a Master’s degree in Mechatronics and Robotics, delving deep into the intricacies of automation and intelligent systems.
+
+Now, as a PhD candidate at TUM, I am excited to contribute to the field of embodied reinforcement learning, aiming to develop adaptive, intelligent robots that can interact seamlessly with their environment. My work combines theoretical research with practical applications, striving to push the boundaries of what is possible in robotics and AI.
+
+Feel free to explore my website to learn more about my research, publications, and projects. Let's connect and collaborate to advance the field of robotics and AI together!
 
 A data-driven personal website
 ======
