@@ -32,8 +32,8 @@ Skills
 ======
 * Python
   * Omniverse IsaacLab
-  * PyTorch
   * Mujoco-py
+  * PyTorch
 * C++
 * MatLab
   * Simulink
