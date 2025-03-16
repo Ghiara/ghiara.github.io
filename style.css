@@ -1,0 +1,449 @@
+/* Base variables for light mode */
+:root {
+    --background-color: #f8f4eb;
+    --text-color: #333;
+    --accent-color: #e68a00;
+    --header-bg-color: #fff;
+    --project-bg-color: #fff;
+    --hover-color: #ffad33;
+    --experience-bg-color: #fff;
+    --timeline-color: #e68a00;
+    --primary-button-color: #e68a00;
+    --link-color: #e68a00;
+    --link-hover-color: #ffad33;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+    .header-container h1 {
+        font-size: 1.8em;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    nav ul li {
+        margin-right: 0;
+    }
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-image {
+        margin-bottom: 20px;
+    }
+    .project-grid {
+        flex-direction: column;
+    }
+    .project-entry {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .project-image {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+    .experience-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .experience-logo-title {
+        flex-direction: column;
+        align-items: center;
+    }
+    .timeline-event {
+        padding-left: 10px;
+    }
+}
+
+/* The switch - the box around the slider */
+.toggle-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+/* Style for the toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+/* Style for the icons within the slider */
+.slider-icon {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.slider .light-mode-icon {
+    display: block;
+    left: 10px;
+}
+
+input:checked + .slider .light-mode-icon {
+    display: none;
+}
+
+input:checked + .slider .dark-mode-icon {
+    display: block;
+    right: 6px;
+}
+
+input:checked + .slider {
+    background-color: var(--accent-color);
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.project-entry {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: var(--project-bg-color);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-entry:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 30px;
+    border-radius: 8px;
+}
+
+.project-details {
+    max-width: 1000px;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.project-link:hover {
+    color: var(--link-hover-color);
+    transform: scale(1.05);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in;
+}
+
+.header-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header {
+    background-color: var(--header-bg-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    color: var(--link-hover-color);
+    border-bottom: 2px solid var(--link-hover-color);
+}
+
+/* Dark Mode Styles */
+[data-theme="dark"] {
+    --background-color: #1a1a1a;
+    --text-color: #ccc;
+    --accent-color: #e68a00;
+    --header-bg-color: #333;
+    --project-bg-color: #262626;
+    --hover-color: #f0efea;
+    --experience-bg-color: #333;
+    --timeline-color: #e68a00;
+    --link-color: #ffad33;
+    --link-hover-color: #ffb84d;
+}
+
+.experience-section {
+    margin: 20px;
+}
+
+.experience-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--experience-bg-color);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+.experience-logo-title {
+    display: flex;
+    align-items: center; /* Center align logo and title vertically */
+    justify-content: flex-start;
+    width: 200px; /* Fixed width for the logo-title container */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.company-title {
+    display: flex;
+    align-items: center; /* Center align the company name vertically */
+    flex-wrap: wrap;
+    width: 150px; /* Ensure a fixed width for the title */
+}
+
+.company-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    line-height: 1.2;
+    white-space: normal; /* Allow wrapping of long names */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.experience-details {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    flex-grow: 1;
+    padding-left: 10px; /* Adds space between company name and experience details */
+}
+
+.position-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.position-title {
+    font-weight: bold;
+}
+
+.position-dates {
+    font-style: italic;
+    color: var(--link-color);
+}
+
+.experience-location {
+    margin-top: 5px;
+    font-style: italic;
+    color: var(--text-color);
+}
+
+.experience-description {
+    margin-top: 10px;
+}
+
+
+
+.school-logo-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align logo and title vertically */
+    justify-content: flex-start;
+    width: 300px; /* Fixed width for the logo-title container */
+    flex-shrink: 0; /* Prevent shrinking */
+    text-align: center;
+}
+.school-title {
+    display: flex;
+    align-items: center; /* Center align the company name vertically */
+    flex-wrap: wrap;
+    width: 300px; /* Ensure a fixed width for the title */
+}
+.school-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 1em;
+    line-height: 1.2;
+    /* white-space: normal; Allow wrapping of long names */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    text-align: center;
+    
+}
+.school-logo {
+    width: 200px;
+    height: auto;
+    /* margin-right: 10px; */
+    /* border-radius: 50%; */
+    object-fit: cover;
+}
+
+
+
+
+
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid var(--timeline-color);
+}
+
+.timeline-event {
+    margin-bottom: 15px;
+}
+
+.event-date {
+    font-weight: bold;
+    color: var(--timeline-color);
+}
+
+.event-description {
+    margin-left: 50px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.typing-effect {
+    font-size: 2em;
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink 1s step-end infinite;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1;
+    max-width: 800px;
+}
+
+/* Contact links */
+.contact-link {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.contact-link:hover {
+    color: var(--link-hover-color);
+    transform: scale(1.05);
+}
+
+/* Highlighted section */
+.highlight {
+    padding: 5px;
+    transition: background-color 0.3s ease-in-out;
+    background-color: rgba(230, 138, 0, 0.1);
+    animation: fadeOutHighlight 2s ease-in-out forwards;
+}
+
+@keyframes fadeOutHighlight {
+    0% { background-color: rgba(230, 138, 0, 0.1); }
+    100% { background-color: transparent; }
+}
